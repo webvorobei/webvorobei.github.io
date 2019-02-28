@@ -1,0 +1,624 @@
+@media (max-width:769px) {
+    .menu-wrap {
+        height: 100%;
+        right: -100%;
+        transition: 0.6s;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .menu-wrap_active {
+        right: 0;
+    }
+
+    .menu {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .logo {
+        margin-top: 15px;
+    }
+
+    .navigation {
+        padding-top: 1px;
+        display: block;
+        margin-top: 15px;
+    }
+
+    .navigation>li {
+        box-sizing: border-box;
+    }
+
+    .navigation>li>a {
+        display: block;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        padding-top: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .icon-menu {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .home {
+        height: 550px;
+    }
+
+    .slider {
+        max-width: 830px;
+        height: 250px;
+        position: relative;
+        margin: 220px auto;
+        overflow: hidden;
+    }
+
+    .slide {
+        max-width: 350px;
+        height: 200px;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: rgba(255, 255, 255, 0.4);
+        color: #74c7d5;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+
+    .slide>.good {
+        font-size: 35px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+
+    .slide>.good>p>span {
+        text-transform: lowercase;
+        margin-right: 10px;
+    }
+
+    .slide>.first {
+        font-size: 100px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .home>.btn-left {
+        font-size: 45px;
+        position: absolute;
+        top: 49%;
+        left: 1%;
+        color: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .home>.btn-right {
+        font-size: 45px;
+        position: absolute;
+        top: 49%;
+        right: 1%;
+        color: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .home>.btn-left:hover,
+    .home>.btn-right:hover {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .cheket {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        bottom: 22%;
+        text-align: center;
+    }
+
+    .chek-btn {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: #c6ffff;
+        transition: 0.4s;
+    }
+
+    .chek-btn:hover {
+        background-color: #74c7d5;
+        cursor: pointer;
+    }
+
+    .chek-btn_active {
+        background-color: #74c7d5;
+    }
+
+    /* СЕРВИС */
+    .service {
+        padding-bottom: 1px;
+        width: 100%;
+        height: auto;
+    }
+
+    .service-inner>h1 {
+        text-align: center;
+        margin-top: 70px;
+        font-size: 36px;
+    }
+
+    .service-inner>p:nth-child(2) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .service-inner>p:nth-child(3) {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 15px;
+    }
+
+    .service-blocks {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        grid-row-gap: 30px;
+    }
+
+    .service-blocks-item {
+        width: 300px;
+    }
+
+    .service-blocks-item>img {
+        margin-top: 39px;
+    }
+
+    .service-blocks-item>p {
+        margin-top: 25px;
+        font-size: 15px;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+
+    /* ПОЛЬЗОВАТЕЛИ */
+    .users {
+        padding-bottom: 1px;
+        width: 100%;
+        height: auto;
+    }
+
+    .users-inner>h1 {
+        margin-top: 70px;
+    }
+
+    .users-inner>p:nth-child(2) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .users-blocks {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        grid-row-gap: 30px;
+    }
+
+    .users-blocks-item {
+        width: 300px;
+    }
+
+    .users-blocks-item>.users-img {
+        margin: 39px auto;
+    }
+
+    /* ПОРТФОЛИО */
+    .inner-porfolio>h1 {
+        text-align: center;
+        margin-top: 140px;
+        font-size: 32px;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .wrapper-port-menu {
+        box-sizing: border-box;
+        margin-top: 50px;
+        padding-top: 35px;
+        width: 100%;
+        height: 100px;
+        border-top: 1px solid #83BA5D;
+        border-bottom: 1px solid #83BA5D;
+        font-size: 18px;
+        color: white;
+    }
+
+    .wrapper-port-menu>h3 {
+        float: left;
+        text-transform: uppercase;
+        padding: 7px 12px;
+    }
+
+    .port-menu {
+        text-align: right;
+    }
+
+    .port-menu>li {
+        display: inline-block;
+        padding: 7px 12px;
+        margin-right: 30px;
+        border-radius: 5px;
+    }
+
+    .port-menu>li:hover {
+        background-color: #f5c149;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+
+    .active_port_menu {
+        background-color: #f5c149;
+    }
+
+    .inner-porfolio {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .works {
+        width: 100%;
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        grid-row-gap: 20px;
+    }
+
+    .work {
+        position: relative;
+        width: 240px;
+        height: 240px;
+        background-color: #fafafa;
+        transition: 0.4s;
+    }
+
+    .work>img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .close {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        z-index: 19;
+    }
+
+    /* ПОДВАЛ */
+    .inner-footer>h1 {
+        font-size: 32px;
+    }
+
+    .inner-footer>p {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20px;
+        line-height: 1.5;
+        color: white;
+    }
+
+    .contact-form {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .address {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .address>.map-img>img {
+        max-width: 260px;
+        max-height: 225px;
+        border-radius: 5px;
+        margin: 40px auto;
+    }
+
+    .astoria>h3 {
+        font-size: 26px;
+    }
+
+    .astoria>h4 {
+        font-size: 20px;
+        color: #c0dfda;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .astoria>p {
+        margin-top: 5px;
+    }
+
+    .phone-email {
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 50px;
+    }
+
+    .question {
+        text-align: center;
+    }
+
+    .question h3 {
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+
+    .question form input,
+    .question form textarea {
+        box-sizing: border-box;
+        background-color: #68a097;
+        outline: none;
+        border: none;
+        padding-left: 7px;
+        border-radius: 5px;
+    }
+
+    .question form input:focus,
+    .question form textarea:focus {
+        background-color: white;
+        color: #68a097;
+    }
+
+    .question form input {
+        width: 260px;
+        height: 40px;
+    }
+
+    .question form input[type=submit] {
+        margin-top: 20px;
+        margin-left: 0%;
+        transform: translate(0%);
+    }
+
+    .question form input:nth-child(2) {
+        margin-left: 15px;
+    }
+
+    .question form textarea {
+        width: 540px;
+        height: 175px;
+        margin-top: 10px;
+        resize: none;
+    }
+}
+
+@media (max-width: 468px) {
+    .service-blocks {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        grid-row-gap: 30px;
+    }
+
+    .users-blocks {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        grid-row-gap: 30px;
+    }
+
+    .inner-porfolio>p {
+        padding: 0 10px;
+    }
+
+    .wrapper-port-menu {
+        box-sizing: border-box;
+        margin-top: 50px;
+        padding-top: 35px;
+        width: 100%;
+        height: auto;
+        border-top: 1px solid #83BA5D;
+        border-bottom: 1px solid #83BA5D;
+        font-size: 18px;
+        color: white;
+    }
+
+    .wrapper-port-menu>h3 {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 22px;
+        padding: 15px 12px;
+        margin-top: 7px;
+        margin-bottom: 15px;
+        float: none;
+    }
+
+    .port-menu {
+        text-align: center;
+        display: block;
+        width: 100%;
+
+    }
+
+    .port-menu>li {
+        display: block;
+        padding: 15px;
+        margin-right: 30px;
+        border-radius: 5px;
+        margin-right: 0;
+    }
+
+    .port-menu>li:hover {
+        background-color: #f5c149;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+
+    .works {
+        width: 100%;
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        grid-row-gap: 20px;
+    }
+
+    * ПОДВАЛ */ 
+    
+    .footer {
+        padding-top: 1px;
+        width: 100%;
+        padding-bottom: 35px;
+        background-image: url(../images/footBg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+    .inner-footer {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .inner-footer>h1 {
+        text-align: center;
+        margin-top: 140px;
+        font-size: 32px;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .inner-footer>p {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20px;
+        line-height: 1.5;
+        color: white;
+    }
+
+    .contact-form {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 100px;
+    }
+
+    .address {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .address>.map-img>img {
+        max-width: 260px;
+        max-height: 225px;
+        border-radius: 5px;
+        margin: 20px auto;
+    }
+
+    .astoria>h3 {
+        font-size: 26px;
+    }
+
+    .astoria>h4 {
+        font-size: 20px;
+        color: #c0dfda;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .astoria>p {
+        margin-top: 5px;
+    }
+
+    .phone-email {
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 50px;
+    }
+
+    .question{
+        text-align: center;
+    }
+    .question h3 {
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+
+    .question form input,
+    .question form textarea {
+        display: block;
+        box-sizing: border-box;
+        background-color: #68a097;
+        outline: none;
+        border: none;
+        padding-left: 7px;
+        border-radius: 5px;
+    }
+
+    .question form input:focus,
+    .question form textarea:focus {
+        background-color: white;
+        color: #68a097;
+    }
+
+    .question form input {
+        width: 300px;
+        height: 40px;
+    }
+
+    .question form input[type=submit] {
+        margin-top: 20px;
+        margin-left: 0%;
+        transform: translate(0%);
+        background-color: #df5c64;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+    }
+
+    .question form input[type=submit]:active {
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, );
+    }
+
+    .question form input:nth-child(2) {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .question form textarea {
+        width: 300px;
+        height: 110px;
+        margin-top: 10px;
+        resize: none;
+    }
+
+
+}
