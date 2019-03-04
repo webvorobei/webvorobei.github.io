@@ -1,6 +1,6 @@
 window.onload = function () {
 
-    const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
+    /*const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
         animationTime = 600,
         framesCount = 20;
 
@@ -31,7 +31,7 @@ window.onload = function () {
                 // время интервала равняется частному от времени анимации и к-ва кадров
             }, animationTime / framesCount);
         });
-    });
+    });*/
     // МЕНЮ
     var iconMenu = document.querySelector('.icon-menu');
     var btnMenu = document.querySelector('.btn-menu');
