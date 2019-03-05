@@ -1,0 +1,4 @@
+User-agent: YandexBot,Googlebot
+Crawl-delay: 1
+Host: http://tatuazh22.ru/
+Sitemap: http://sitemap.xml
