@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@font-face {
+    font-family: marmelad; /* Имя шрифта */
+    src: url(Marmelad.ttf); /* Путь к файлу со шрифтом */
+   }
+.wrapper_table{
+    width: 100%;
+    font-family: marmelad;
+    color: #4a4a4a;
+}
+.wrapper_table > table{
+    width: 80%;
+    margin: 40px auto;
+    text-align: left;
+    border: 0;
+    border-spacing: 0;
+}
+
+.wrapper_table > table > thead{
+    text-indent: 10px;
+    font-size: 18px;
+    line-height: 24px;
+}
+.wrapper_table > table > tbody{
+        box-shadow: 0 0 25px 0 rgba(210,228,241,.5);
+}
+.wrapper_table  .praice_main{
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 50px;
+    text-indent: 15px;
+    background-color: rgba(194,151,60,.7);
+}
+.wrapper_table > table > tbody > tr{
+      font-size: 18px;
+    line-height: 35px;
+    text-indent: 30px; 
+}
+
+/*-----------------АДАПТИВ--------------------*/
+
+@media (max-width: 800px) {
+    .wrapper_table > table{
+    width: 100%;
+    margin: 20px auto;
+    }
+    .wrapper_table > table > tbody > tr{
+      font-size: 14px;
+    line-height: 25px;
+    text-indent: 3px; 
+    }
+    .wrapper_table  .praice_main{
+    font-size: 18px;
+    line-height: 35px;
+    text-indent: 10px;
+    }
+}
+
+@media (max-width: 480px){
+   .wrapper_table > table{
+    width: 100%;
+    margin: 20px auto;
+    }
+    .wrapper_table > table > tbody > tr{
+      font-size: 12px;
+    line-height: 25px;
+    text-indent: 3px; 
+    }
+    .wrapper_table  .praice_main{
+    font-size: 16px;
+    line-height: 30px;
+    text-indent: 10px;
+    }
+}

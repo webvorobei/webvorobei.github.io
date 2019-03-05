@@ -1,0 +1,963 @@
+@charset "UTF-8";
+body {
+	position: relative;
+	font-family: source-sans-pro, Arial, Verdana, Geneva, sans-serif;
+	font-size: 12pt;
+}
+
+@font-face {
+	font-family: badScript;
+	/* Имя шрифта */
+	src: url(badScript.ttf);
+	/* Путь к файлу со шрифтом */
+}
+
+/*БЛОК ХЭДЭР*/
+
+.header {
+	width: 100%;
+	border-bottom: 1px solid #F4F4F5;
+}
+
+.wrapper-logo {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.wrap-elem {
+	flex-grow: 1;
+}
+
+.zagolovok {
+	text-align: center;
+}
+
+.zagolovok > h1 {
+	font-weight: 100;
+	font-size: 21px;
+	color: #3F3939;
+}
+
+.logo > a > img {
+	max-width: 270px;
+	height: auto;
+	margin-left: 50px;
+}
+
+.contact > p {
+	padding: 5px;
+	color: #3F3939;
+	font-size: 18px;
+}
+
+.contact > p > .fa {
+	color: #3F3939;
+	font-size: 18px;
+	padding-right: 7px;
+}
+
+/*КОНЕЦ БЛОКА ХЭДЭР*/
+
+/*БЛОК НАВИГАЦИИ*/
+
+.navigation {
+	width: 100%;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	background-color: #F4F4F5;
+	/*	box-shadow: 1px 1px 3px 0px rgba(50, 50, 50, 0.57);*/
+	z-index: 98;
+}
+
+.menu {
+	display: flex;
+	justify-content: center;
+	/*	flex-direction: column;*/
+}
+
+.menu > li > a {
+	position: relative;
+	display: block;
+	text-decoration: none;
+	line-height: 40px;
+	padding: 0 30px;
+	color: #daa43f;
+	;
+	text-transform: uppercase;
+	font-size: 11pt;
+}
+
+.navigation > .menu > li > a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-top: 1px solid #FFD700;
+	border-bottom: 1px solid #FFD700;
+	transition: 0.5s;
+	transform: scaleX(0);
+}
+
+.navigation > .menu > li > a::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-right: 1px solid #FFD700;
+	border-left: 1px solid #FFD700;
+	transition: 0.5s;
+	transform: scaleY(0);
+}
+
+.navigation > .menu > li > a:hover::before,
+.navigation > .menu > li > a:hover::after {
+	transform: scaleX(1);
+	transform: scaleY(1);
+}
+
+*/ .iconMenu {
+	display: block;
+	font-size: 24px;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	z-index: 99;
+	color: black;
+}
+
+.iconMenu {
+	display: none;
+}
+
+/*КОНЕЦ БЛОКА НАВИГАЦИИ*/
+
+/*БЛОК СЛАЙДЕР*/
+
+#slides {
+	position: relative;
+	max-width: 100%;
+	height: 500px;
+	padding: 0px;
+	border-radius: 5px;
+	list-style-type: none;
+}
+
+.slide {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+	font-size: 40px;
+	box-sizing: border-box;
+	background: #333;
+}
+
+.showing {
+	opacity: 1;
+	z-index: 2;
+}
+
+/*
+.slide {
+ 
+    color: #daa43f;
+}
+*/
+
+.slide:nth-of-type(1) {
+	background-image: url(../images/tatuBrovi1.jpg);
+	background-size: cover;
+	color: #fafafa;
+}
+
+.slide:nth-of-type(2) {
+	background-image: url(../images/slide02.png);
+	background-size: cover;
+	color: #656565;
+}
+
+.slide:nth-of-type(3) {
+	background-image: url(../images/tatugub4.jpg);
+	background-size: cover;
+	color: #fafafa;
+}
+
+.slide:nth-of-type(4) {
+	background-image: url(../images/tatuBrovi3.jpg);
+	background-size: cover;
+	color: #fafafa;
+}
+
+.slide:nth-of-type(1) > div {
+	position: absolute;
+	top: 35%;
+	left: 3%;
+	width: 500px;
+	padding: 15px;
+	line-height: 1.6;
+	/*    background-color: rgba(255,255,255,0.2); */
+	font-size: 28px;
+	text-align: center;
+
+}
+
+.slide:nth-of-type(2) > div {
+	position: absolute;
+	top: 35%;
+	right: 5%;
+	width: 500px;
+	padding: 15px;
+	line-height: 1.6;
+	/*    background-color: rgba(250,250,250,0.2); */
+	text-align: center;
+	font-size: 28px;
+}
+
+.slide:nth-of-type(3) > div {
+	position: absolute;
+	top: 35%;
+	right: 3%;
+	width: 600px;
+	padding: 15px;
+	line-height: 1.6;
+	/*    background-color: rgba(250,250,250,0.1); */
+	text-align: center;
+	font-size: 28px;
+}
+
+.slide:nth-of-type(4) > div {
+	position: absolute;
+	top: 35%;
+	left: 3%;
+	width: 600px;
+	padding: 15px;
+	line-height: 1.6;
+	/*    background-color: rgba(250,250,250,0.1); */
+	text-align: center;
+	font-size: 28px;
+}
+
+
+/*КОНЕЦ БЛОКА СЛАЙДЕР*/
+
+/*БЛОК КОНТЕНТ*/
+
+.mainTatuWrap {
+	width: 100%;
+	background-color: #F4F4F5;
+	padding-top: 30px;
+	background-image: url(../images/fon1.png);
+}
+
+.tatuWrap {
+	width: 70%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	font-family: inherit;
+	color: #3F3939;
+}
+
+.tatuText > h2 {
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.tatuText > p {
+	font-size: 16px;
+	text-align: left;
+	margin: 10px auto;
+	line-height: 140%;
+}
+
+.tatuImg > img {
+	max-width: 250px;
+}
+
+.uslugiWrap {
+	background-color: #fff;
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+
+.uslugiWrap > h3 {
+	margin-top: 5px;
+	font-size: 22px;
+	color: #daa43f;
+	text-transform: uppercase;
+	margin: 5px auto;
+	text-align: center;
+}
+
+.uslugi {
+	margin-top: 30px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 250px);
+	grid-column-gap: 50px;
+	grid-row-gap: 35px;
+	justify-content: center;
+}
+
+.usl {
+	color: #4B4B4B;
+	text-align: center;
+	transition: 0.4s;
+	border-radius: 5%;
+}
+
+.usl a {
+	text-decoration: none;
+	color: #3F3939;
+}
+
+.usl:hover {
+	transition: 0.4s;
+	box-shadow: 0px 2px 1px 1px rgba(84, 64, 64, 0.46);
+	-webkit-box-shadow: 0px 2px 1px 1px rgba(84, 64, 64, 0.46);
+	-moz-box-shadow: 0px 2px 1px 1px rgba(84, 64, 64, 0.46);
+}
+
+.usl a h3 {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.usl a ul li {
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	font-size: 15px;
+}
+
+.fa-check-circle-o {
+	margin-right: 7px;
+	color: green;
+}
+
+.usl img {
+	max-width: 150px;
+}
+
+/*КОНЕЦ БЛОКА КОНТЕНТ*/
+
+.wrapVideo {
+	background-color: #F4F4F5;
+	width: 100%;
+	text-align: center;
+	padding-top: 9px;
+	background-image: url(../images/fon1.png);
+}
+
+.wrapVideo > h3 {
+	margin-bottom: 5px;
+	font-size: 22px;
+	text-decoration: underline;
+	color: #daa43f;
+	text-transform: uppercase;
+}
+
+.video {
+	width: 50%;
+	height: 250px;
+}
+
+.wrap_im {
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.wrap_im > h3 {
+	width: 70%;
+	margin: 0 auto 15px auto;
+	text-align: center;
+	font-size: 22px;
+	color: #daa43f;
+	text-transform: uppercase;
+}
+
+.im {
+	width: 70%;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-column-gap: 30px;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+.my_foto > img {
+	width: auto;
+	max-height: 300px;
+	border: 1px solid #daa43f;
+}
+
+.my_content > p {
+	margin-top: 15px;
+	line-height: 150%;
+}
+
+.wrap_wimy {
+	width: 100%;
+	padding-top: 15px;
+	background-image: url(../images/fon1.png);
+}
+
+.wrap_wimy > h3 {
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 22px;
+	color: #daa43f;
+	text-transform: uppercase;
+}
+
+.wrap_reason {
+	display: grid;
+	grid-template-columns: repeat(4, 250px);
+	grid-column-gap: 25px;
+	justify-content: center;
+}
+
+.reason {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.reason > img {
+	border: 1px solid #daa43f;
+}
+
+.reason > p {
+	margin-top: 15px;
+	font-size: 18px;
+	line-height: 140%;
+}
+
+/*----------------СЕРТИФИКАТЫ-------------------*/
+
+.zag > h3 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 22px;
+	color: #daa43f;
+	margin-top: 22px;
+	padding-bottom: 5px;
+}
+
+.image_wrapper {
+	width: 80%;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 20px;
+	margin: 25px auto;
+}
+
+.minimized {
+	width: 80%;
+	transition: 0.2s;
+	margin: 0 auto;
+	border: 1px solid #daa43f;
+	cursor: pointer;
+}
+
+/* -----увеличенная картинка------ */
+
+#magnify {
+	display: none;
+	position: fixed;
+	max-width: 600px;
+	height: auto;
+	z-index: 9999;
+}
+
+#magnify img {
+	width: 97%;
+}
+
+/* затемняющий фон */
+
+#overlay {
+	display: none;
+	background: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.5;
+	z-index: 9990;
+}
+
+/* ---кнопка закрытия--- */
+
+#close-popup {
+	width: 30px;
+	height: 30px;
+	background: #FFFFFF;
+	border: 1px solid #AFAFAF;
+	border-radius: 15px;
+	cursor: pointer;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+#close-popup i {
+	width: 30px;
+	height: 30px;
+	background: url(https://codernote.ru/files/cross.png) no-repeat center center;
+	background-size: 16px 16px;
+	display: block;
+}
+
+@keyframes rota {
+	25% {
+		transform: rotate(360deg);
+	}
+}
+
+#close-popup:hover {
+	animation: rota 4s infinite normal;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
+
+/*
+.wrapper_sivak{
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.wrapper_sivak > .img_sivak> img{
+    max-width: 250px;
+    height: auto;
+    border-radius: 25px;
+}
+*/
+
+/*--------КОНЕЦ БЛОКА СЕРТИФИКАТЫ---------------*/
+
+/*footer*/
+
+.wrap_foot {
+	background-color: #656565;
+	line-height: 45px;
+	text-align: center;
+	color: #F4F4F4;
+}
+
+/*ebd footer*/
+
+/*  АДАПТИВ  */
+
+@media (max-width: 768px) {
+	.wrap-elem {
+		flex-grow: 1;
+	}
+	.logo {
+		margin: auto;
+		order: -1;
+		text-align: center;
+	}
+	.logo > a > img {
+		margin-bottom: 7px;
+		margin-left: 0;
+	}
+	.zagolovok > h1 {
+		font-size: 19px;
+	}
+	.contact > p {
+		font-size: 16px;
+	}
+	.contact {
+		text-align: center;
+		margin-top: 7px;
+	}
+	.navigation {
+		padding-top: 25px;
+		width: 100%;
+		height: 100%;
+		background-color: #F4F4F5;
+		margin-top: 0;
+		position: fixed;
+		top: 0;
+		right: 0;
+		transition: 0.9s;
+		transform: translateX(100%);
+		z-index: 98;
+	}
+	.navigation-open {
+		padding-top: 25px;
+		width: 100%;
+		height: 100%;
+		background-color: #F4F4F5;
+		margin-top: 0;
+		position: fixed;
+		top: 0;
+		right: 0;
+		transition: 0.9s;
+		transform: translateX(0);
+		z-index: 98;
+	}
+	.iconMenu {
+		display: block;
+	}
+	.iconMenu > img {
+		position: fixed;
+		top: 20px;
+		right: 15px;
+		opacity: 0.3;
+		z-index: 99;
+		transition: 0.5s;
+		transform: rotate(0deg)
+	}
+	.iconMenu-reverse > img {
+		position: fixed;
+		top: 20px;
+		right: 15px;
+		opacity: 0.2;
+		z-index: 99;
+		transition: 0.5s;
+		transform: rotate(180deg)
+	}
+	.menu {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.menu > li {
+		text-align: center;
+	}
+	/*    СЛАЙДЕР*/
+	#slides {
+		height: 300px;
+	}
+	.slide:nth-of-type(1) > div {
+		position: absolute;
+		top: 30%;
+		left: 15%;
+		width: 500px;
+		padding: 15px;
+		line-height: 1.6;
+		background-color: rgba(255, 255, 255, 0.2);
+		font-size: 22px;
+		text-align: center;
+
+	}
+	.slide:nth-of-type(2) > div {
+		position: absolute;
+		top: 35%;
+		right: 1%;
+		width: 500px;
+		padding: 15px;
+		line-height: 1.6;
+		background-color: rgba(250, 250, 250, 0.2);
+		text-align: center;
+		font-size: 22px;
+	}
+	.slide:nth-of-type(3) > div {
+		position: absolute;
+		top: 30%;
+		left: 15%;
+		width: 500px;
+		padding: 15px;
+		line-height: 1.6;
+		background-color: rgba(250, 250, 250, 0.2);
+		text-align: center;
+		font-size: 22px;
+	}
+	.slide:nth-of-type(4) > div {
+		position: absolute;
+		top: 30%;
+		left: 15%;
+		width: 500px;
+		padding: 15px;
+		line-height: 1.6;
+		background-color: rgba(250, 250, 250, 0.2);
+		text-align: center;
+		font-size: 22px;
+	}
+	/*    КОНЕЦ БЛОКА СЛАЙДЕР*/
+	.tatuWrap {
+		display: grid;
+		grid-template-columns: 1fr;
+		width: 100%;
+	}
+	.tatuImg {
+		text-align: center;
+		order: -1;
+		margin-top: -20px;
+	}
+	.tatuImg > img {
+		max-width: 210px;
+	}
+	.tatuText > h2 {
+		margin-top: 20px;
+		text-align: center;
+	}
+	.tatuText > p {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.uslugi {
+		grid-template-columns: repeat(2, 250px);
+	}
+	.wrap_im > h3 {
+		width: 80%;
+		margin: 0 auto 13px auto;
+		font-size: 20px;
+	}
+	.im {
+		width: 90%;
+		display: grid;
+		grid-template-columns: 1fr 4fr;
+		grid-column-gap: 25px;
+		margin: 0 auto;
+		justify-content: center;
+	}
+	.wrap_reason {
+		display: grid;
+		grid-template-columns: repeat(2, 250px);
+	}
+	.image_wrapper {
+		width: 90%;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-row-gap: 10px;
+		margin: 25px auto;
+	}
+	.minimized {
+		width: 65%;
+		cursor: pointer;
+		transition: 0.5s;
+		margin: 0 auto;
+	}
+	#magnify {
+		display: none;
+		position: fixed;
+		max-width: 600px;
+		height: auto;
+		z-index: 9999;
+		padding: 0 auto;
+		text-align: center;
+	}
+	#magnify img {
+		width: 75%;
+		margin: 0 auto;
+	}
+	/*footer*/
+	.wrap_foot {
+		font-size: 12px;
+	}
+	/*ebd footer*/
+}
+
+@media (max-width: 480px) {
+	#slides {
+		height: 180px;
+	}
+	.logo {
+		order: -1;
+		text-align: center;
+	}
+	.logo > a > img {
+		margin-bottom: 7px;
+		margin-left: 0;
+	}
+	.contact {
+		text-align: center;
+		margin-top: 7px;
+	}
+
+	.zagolovok > h1 {
+		font-size: 17px;
+	}
+	.contact > p {
+		font-size: 14px;
+	}
+	.tatuWrap {
+		display: grid;
+		grid-template-columns: 1fr;
+		width: 100%;
+	}
+	.tatuImg {
+		text-align: center;
+		order: -1;
+	}
+	.tatuImg > img {
+		max-width: 150px;
+	}
+	.tatuText > h2 {
+		margin-top: 20px;
+		font-size: 18px;
+		text-align: center;
+	}
+	.tatuText > p {
+		font-size: 14px;
+		margin: 10px 10px;
+		text-align: center;
+	}
+	.uslugi {
+		grid-template-columns: repeat(1, 250px);
+		grid-column-gap: 5px;
+		grid-row-gap: 25px;
+		margin-bottom: 10px;
+	}
+	.wrapVideo {
+		padding-top: 0px;
+	}
+	.video {
+		width: 100%;
+		height: 200px;
+	}
+	.wrap_im > h3 {
+		width: 95%;
+		margin: 0 auto 10px auto;
+		font-size: 18px;
+	}
+	.im {
+		width: 90%;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-row-gap: 15px;
+		margin: 0 auto;
+		justify-content: center;
+		text-align: center;
+	}
+	.my_foto > img {
+		width: auto;
+		max-height: 300px;
+		border: 1px solid #daa43f;
+	}
+	.my_content > p {
+		margin-top: 7px;
+		margin-bottom: 5px;
+		line-height: 150%;
+		font-size: 15px;
+	}
+	.wrap_reason {
+		display: grid;
+		grid-template-columns: repeat(1, 80%);
+		grid-column-gap: 10px;
+		justify-content: center;
+	}
+	.reason > img {
+		max-width: 150px;
+	}
+	.reason > p {
+		margin-top: 10px;
+		font-size: 15px;
+		line-height: 150%;
+	}
+	.image_wrapper {
+		width: 70%;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 20px;
+		margin: 25px auto;
+		justify-content: center;
+	}
+	.uslugiWrap > h3 {
+		font-size: 20px;
+	}
+	.usl a h3 {
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+	.uslugiWrap > h3 {
+		font-size: 15px;
+	}
+	.wrap_wimy > h3 {
+		font-size: 20px;
+	}
+	.zag > h3 {
+		font-size: 20px;
+	}
+		.slide:nth-of-type(1) > div {
+		position: absolute;
+		top: 20%;
+		left: 1%;
+		width: 90%;
+		padding: 15px;
+		line-height: 1.6;
+		background-color: rgba(255, 255, 255, 0.2);
+		font-size: 16px;
+		text-align: center;
+	}
+	.slide:nth-of-type(2) > div {
+		position: absolute;
+		top: 35%;
+		right: 1%;
+		width: 90%;
+		padding: 15px;
+		line-height: 1.6;
+		background-color: rgba(250, 250, 250, 0.2);
+		text-align: center;
+		font-size: 16px;
+	}
+	.slide:nth-of-type(3) > div {
+		position: absolute;
+		top: 10%;
+		left: 1%;
+		width: 90%;
+		padding: 15px;
+		line-height: 1.6;
+		background-color: rgba(250, 250, 250, 0.2);
+		text-align: center;
+		font-size: 16px;
+	}
+	.slide:nth-of-type(4) > div {
+		position: absolute;
+		top: 25%;
+		left: 1%;
+		width: 90%;
+		padding: 15px;
+		line-height: 1.6;
+		background-color: rgba(250, 250, 250, 0.2);
+		text-align: center;
+		font-size: 16px;
+	}
+	.wrap_foot > p {
+		margin: 0 5px;
+	}
+}
+
+
+@media (max-width: 320px) {
+	.logo {
+		order: -1;
+		text-align: center;
+	}
+	.logo > a > img {
+		margin-bottom: 7px;
+		margin-left: 0;
+	}
+	.contact {
+		text-align: center;
+		margin-top: 7px;
+	}
+	.zagolovok > h1 {
+		font-size: 18px;
+	}
+	.contact > p {
+		font-size: 15px;
+	}
+
+}

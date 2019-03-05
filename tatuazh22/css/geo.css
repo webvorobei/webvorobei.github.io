@@ -1,0 +1,45 @@
+@font-face {
+    font-family: marmelad; /* Имя шрифта */
+    src: url(Marmelad.ttf); /* Путь к файлу со шрифтом */
+   }
+h1 {
+    font-family: marmelad;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 26pt;
+    margin-top: 22px;
+}
+h2{
+    font-family: marmelad;
+    text-transform: uppercase;
+    font-size: 16pt;
+   text-align: center;
+    margin: 10px 0;
+}
+.mycont{
+    width: 100%;
+    height: auto;
+    font-size: 18px; 
+    color: #4A4A4A;
+}
+.mycont > p{
+    margin: 10px auto;
+    padding: 5px;
+    text-align: center;
+}
+.mycont > p > i{
+    color: #F4AA20;
+    margin-right: 5px;
+        font-size: 20px;
+}
+.mycont > p > a{
+    text-decoration: none;
+    color: #4A4A4A;
+}
+iframe{
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: 100%;
+    height: 450px;
+}
