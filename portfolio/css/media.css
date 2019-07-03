@@ -1,0 +1,162 @@
+@media(max-width: 1025px) {
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    }
+    .about-me__photo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 780px) {
+    /*==============================
+    Главное меню навигация по сайту
+    =============================*/
+    .btn-menu {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        top: 7%;
+        right: 7%;
+        z-index: 100;
+    }
+    .btn-menu_item {
+        display: block;
+        width: 40px;
+        border-bottom: 2px solid #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .btn-menu_item::before,
+    .btn-menu_item::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        height: 2px;
+        width: 40px;
+        background-color: #F2F2F2;
+        display: block;
+        transition: 0.5s;
+    }
+    .btn-menu_item::before {
+        transform: translateY(-10px);
+    }
+    .btn-menu_item::after {
+        transform: translateY(10px);
+    }
+    .btn-menu_item-active::before {
+        transform: rotate(45deg);
+    }
+    .btn-menu_item-active {
+        border: 0;
+        transition: 0.3s;
+    }
+    .btn-menu_item-active::after {
+        transform: rotate(-45deg);
+    }
+    .navigation {
+        width: 80%;
+        height: 100vh;
+        transition: 0.5s;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: rgba(225, 225, 225, 0.9);
+        transform: translateX(100%);
+        z-index: 99;
+    }
+    .navigation-active {
+        transform: translateX(0%)!important;
+    }
+    .navigation__main-menu {
+        width: 100%;
+        margin: 0;
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    .navigation__menu-item .navigation__menu-link,
+    .navigation__menu-contact {
+        display: block;
+        padding-bottom: 0px;
+        margin-bottom: 40px;
+        text-decoration: none;
+        color: #000;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+    /*================== 
+        Блок обо мне
+    ==================*/
+    .container-about-me {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .about-me__photo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .about-me__photo img {
+        margin: 0 auto;
+    }
+    .about-me__resume {
+        flex-basis: 100%;
+    }
+    /*====================
+        Блок мои навыки
+    ====================*/
+    .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    /*==================== 
+        Блок мои работы 
+    ====================*/
+    .works {
+        /* width: 100%;
+        display: grid; */
+        grid-template-columns: 1fr;
+        /* grid-gap: 30px 10px;
+        justify-content: space-between;
+        justify-items: space-between; */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    .btn-menu {
+        top: 2%;
+        right: 3%;
+    }
+    .briefly {
+        padding: 35px 25px;
+    }
+    .resum__personal,
+    .resume__education {
+        padding: 35px 25px;
+    }
+    .my-contacts {
+        max-width: 550px;
+        width: 90%;
+    }
+}

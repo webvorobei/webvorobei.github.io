@@ -1,0 +1,485 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/fon03.png);
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+
+/*==============================
+ Главное меню навигация по сайту
+ =============================*/
+
+.navigation-media {
+    display: none;
+}
+
+.navigation {
+    width: 100%;
+    height: 50px;
+    transition: 0.3s;
+}
+
+.navigation_fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navigation__main-menu {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navigation__menu-item .navigation__menu-link,
+.navigation__menu-contact {
+    display: block;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.navigation__menu-item .navigation__menu-link:hover,
+.navigation__menu-contact:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    color: #F11D1D;
+    transition: 0.1s;
+}
+
+
+/*---------------------------
+ Текст заголовок в блоке хэдэр 
+ ---------------------------*/
+
+.title-head {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.title-head h1 {
+    font-size: 3.6em;
+    margin-bottom: 5%;
+    line-height: 1.5;
+}
+
+.title-head h2 {
+    font-size: 2.1em;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+
+/*================= 
+    Блок обо мне
+=================*/
+
+.about-me-section {
+    width: 100%;
+    background-color: #EFEFEF;
+    padding: 50px 0;
+    background-color: #fff;
+    color: #000;
+}
+
+.container-about-me {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container-about-me__heading {
+    font-size: 2.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 50px 0;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.about-me__photo img {
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .16);
+}
+
+.heading-3 {
+    font-size: 1.9em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.about-me__resume {
+    flex-basis: 60%;
+}
+
+.resum__personal,
+.resume__education {
+    border-radius: 20px;
+    padding: 35px 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .16);
+}
+
+.info__list {
+    font-size: 1.3em;
+}
+
+.info__list-text {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.briefly {
+    border-radius: 20px;
+    padding: 35px 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .16);
+}
+
+.briefly__text {
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
+
+/*====================
+    Блок мои навыки
+====================*/
+
+.skills-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0;
+    color: #fff;
+    background: linear-gradient(to right bottom, rgba(17, 13, 51, .329), rgba(0, 102, 185, .329)), url(../images/fon01.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container-skills {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container-skills__heading {
+    font-size: 2.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 50px 0;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__front {
+    flex-basis: 50%;
+}
+
+.skills__heading {
+    font-size: 1.7em;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 7px;
+}
+
+.skills__scale {
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+.scale {
+    width: 100%;
+    height: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(100, 100, 100, 0.5);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.scale__pr {
+    display: block;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #5FFF50;
+}
+
+.scale__html {
+    width: 85%;
+    transition: 0.7s;
+}
+
+.scale__css {
+    width: 85%;
+    transition: 0.7s;
+}
+
+.scale__js {
+    width: 55%;
+    transition: 0.7s;
+}
+
+.scale__jq {
+    width: 45%;
+    transition: 0.7s;
+}
+
+.scale__php {
+    width: 30%;
+    transition: 0.7s;
+}
+
+.scale__ms {
+    width: 30%;
+    transition: 0.7s;
+}
+
+.scale__no-active {
+    width: 0%;
+    transition: 0.7s;
+}
+
+
+/*==================== 
+    Блок мои работы 
+====================*/
+
+.my-works-section {
+    width: 100%;
+    background-color: #fff;
+    padding: 50px 0 150px 0;
+}
+
+.container-works {
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container-works__heading {
+    font-size: 2.1em;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    margin: 50px 0;
+}
+
+.works {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px 10px;
+    justify-content: space-between;
+    justify-items: space-between;
+}
+
+.works__my-work {
+    width: auto;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.works__img {
+    max-width: 100%;
+    object-fit: cover;
+    z-index: 1;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .16);
+}
+
+.works__hover-block {
+    opacity: 0;
+    transform: translateY(-10%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 5%;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.works__my-work:hover .works__hover-block {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.works__hover-block p {
+    line-height: 1.5;
+}
+
+.works__hover-block_btn {
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid #259AC8;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #259AC8;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.works__hover-block_btn:hover {
+    background-color: inherit;
+}
+
+
+/*==================
+    БЛОК КОНТАКТЫ 
+==================*/
+
+.my-contacts-section {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.my-contacts-section-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    transform-origin: center center;
+}
+
+.my-contacts {
+    max-width: 550px;
+    width: 100%;
+    min-height: 300px;
+    background-color: #fff;
+    padding: 50px 55px 20px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: 0.3s;
+    position: relative;
+    animation-name: contactsActive;
+    animation-duration: 0.9s;
+    transform-style: preserve-3d;
+}
+
+@keyframes contactsActive {
+    from {
+        opacity: 0;
+        transform: rotateX(60deg) translateY(-300px);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0deg) translateY(0);
+    }
+}
+
+.my-contacts__btn-close {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+}
+
+.my-contacts__btn-close_elem::after,
+.my-contacts__btn-close_elem::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -40%;
+    background-color: #000;
+}
+
+.my-contacts__btn-close_elem::after {
+    transform: rotateZ(45deg);
+}
+
+.my-contacts__btn-close_elem::before {
+    transform: rotateZ(-45deg);
+}
+
+.my-contacts__title {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.my-contacts__text {
+    line-height: 1.1;
+    font-size: 1.1rem;
+    margin: 20px 0;
+}
+
+.my-contacts__com {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.my-contacts__com a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #000;
+    margin-left: 10px;
+    transition: 0.2s;
+}
+
+.my-contacts__com a:hover {
+    cursor: pointer;
+    color: #0FC0FC;
+}
+
+.my-contacts__soc-seti {
+    margin-top: 20px;
+}
+
+.my-contacts__soc-seti a {
+    margin-left: 20px;
+    cursor: pointer;
+}
