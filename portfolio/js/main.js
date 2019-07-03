@@ -10,7 +10,7 @@ window.onload = function() {
     let scaleNo = document.querySelectorAll('.scale__no-active');
     let width = document.body.clientWidth || document.documentElement.clientWidth; /* Получаем ширину экрана */
     let menuNavigation = document.querySelector('.navigation'); /* меню навигации */
-    let menuBtn = document.querySelector('.btn-menu_item'); /* кнопка меню */
+    let menuBtn = document.querySelector('.btn-menu'); /* кнопка меню */
     let btnMenuItem = document.querySelector('.btn-menu_item');
     let btnContact = document.querySelector('.navigation__menu-contact'); /*кнопка для вызова контактов */
     let windowContact = document.querySelector('.my-contacts-section'); /* окно контакты */
@@ -32,6 +32,7 @@ window.onload = function() {
             btnMenuItem.classList.remove('btn-menu_item-active');
             menuNavigation.classList.remove('navigation-active');
         }
+        console.log('click');
     });
 
     // вызов функции фиксации меню
