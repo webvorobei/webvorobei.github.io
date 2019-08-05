@@ -1,0 +1,216 @@
+@media (max-width: 1024px) {
+  .btn-open {
+    display: block;
+  }
+
+  .header-navigation {
+    display: none;
+  }
+
+  .header-social {
+    display: none;
+  }
+
+  .header-fixed__navigation {
+    display: none;
+  }
+
+  .header-fixed__social {
+    display: none;
+  }
+
+  /* BLOK INTRO 
+  =================================*/
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro__box {
+    padding: 120px 70px;
+  }
+
+  /* ABOUT SECTION 
+  ===================================*/
+  .about {
+    flex-direction: column;
+  }
+
+  .about__cont {
+    padding-right: 0px;
+    padding-bottom: 70px;
+  }
+
+  /* SECTION JOIN 
+  ===================================*/
+  .join {
+    flex-direction: column;
+  }
+
+  .join-cont {
+    background-color: #190a49;
+    padding: 100px 200px;
+  }
+
+  .join__img {
+    width: 100%;
+    height: 600px;
+  }
+
+  /* ABOUT US PAGE 
+  ---------------------------------------*/
+  .about-us {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .about-us__img {
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+  }
+
+  .about-us__cont {
+    padding: 50px;
+  }
+
+  .personal-trainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .personal-trainer__img{
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 778px) {
+  .intro__box {
+    padding: 120px 35px;
+  }
+
+  /*---- SECTION JOIN ----*/
+  .join-cont {
+    background-color: #190a49;
+    padding: 100px 100px;
+  }
+
+  /* PRICING 
+  ==========================*/
+  .pricing {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .beginer {
+    width: 70%;
+    margin: 40px 0;
+  }
+
+  /* FOOTER
+  ============================ */
+
+  .footer-contact{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .our-trainers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trainer-content {
+    background-color: #0f0432;
+    padding: 70px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  /* ABOUT SECTION 
+  ===================================*/
+  .about {
+    width: 90%;
+  }
+
+  .quote {
+    width: 90%;
+  }
+
+
+  /*---- SECTION JOIN ----*/
+  .join-cont {
+    padding: 100px 25px;
+  }
+
+  /* SECTION CLASSES 
+  ======================================*/
+
+  .wrap-classes {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* PRICING 
+  ======================================*/
+  .wrap-pricing {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .beginer {
+    width: 90%;
+    margin: 40px 0;
+  }
+
+  /* FOOTER
+  ============================ */
+
+  .wrap-footer {
+    width: 90%;
+  }
+
+  /* ABOUT US PAGE 
+  ---------------------------------------*/
+  .about-us {
+    width: 90%;
+  }
+
+  .about-us__img {
+    min-height: 300px;
+  }
+
+  .about-us__cont {
+    padding: 20px 0;
+  }
+
+  .our-trainers {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+
+  .trainer-content {
+    background-color: #0f0432;
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  /* PRICING 
+  ======================================*/
+
+  .beginer {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
