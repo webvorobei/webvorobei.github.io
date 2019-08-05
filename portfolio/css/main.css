@@ -483,3 +483,7 @@ body {
     margin-left: 20px;
     cursor: pointer;
 }
+
+.my-contacts__soc-seti a img{
+    max-width: 40px;
+}
