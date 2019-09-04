@@ -4,12 +4,13 @@
  let modalWindowImg = document.querySelector('.modal-window__img img');
  let modalWindow = document.querySelector('.modal-window');
  let btnClose = document.querySelector('.modal-window_close');
+ let srcImg; 
 
- // надо сделать чтоб старый класс удалялся а новый присваивался
+ // вызов картинки в модальном окне 
  worksItem.forEach((i) => {
-    i.addEventListener('click', (j) => {
-       // let target = j.target;
-       let srcImg = i.firstElementChild.getAttribute('src');
+    i.addEventListener('click', () => {
+			 srcImg = i.firstElementChild.getAttribute('src');
+			 console.log(srcImg);
        modalWindow.classList.add('modal-window_open');
        modalWindowImg.setAttribute('src', srcImg);
        document.body.style.overflow = 'hidden';

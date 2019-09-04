@@ -10,8 +10,6 @@ window.onload = () => {
    let secondBlock = document.querySelector('#section-services').getBoundingClientRect().top + pageYOffset; /* расстояние до второрго блока */
    let nextBlokBtn = document.querySelector('.header__next-btn');
 
-   console.log(secondBlock);
-
    // Появление кнопки наверх при скролле
    this.addEventListener('scroll', () => {
       currPossition = document.body.scrollTop || document.documentElement.scrollTop;
