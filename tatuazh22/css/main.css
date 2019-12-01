@@ -3,6 +3,7 @@ body {
 	position: relative;
 	font-family: source-sans-pro, Arial, Verdana, Geneva, sans-serif;
 	font-size: 12pt;
+	background-color: green;
 }
 
 @font-face {
